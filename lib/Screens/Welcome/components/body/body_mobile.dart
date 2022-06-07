@@ -19,13 +19,16 @@ class BodyMobile extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              "WELCOME TO EDU",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              "Bem-vindo(a) ao Síndicos BR",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
-            SizedBox(height: size.height * 0.05),
+            SizedBox(
+              height: size.height * 0.02,
+              width: size.width * 5,
+            ),
             SvgPicture.asset(
-              "assets/icons/chat.svg",
-              height: size.height * 0.45,
+              "assets/icons/cominghome.svg",
+              height: size.height / 2,
             ),
             SizedBox(height: size.height * 0.05),
             RoundedButton(
@@ -42,9 +45,9 @@ class BodyMobile extends StatelessWidget {
               },
             ),
             RoundedButton(
-              text: "SIGN UP",
-              color: kPrimaryLightColor,
-              textColor: Colors.black,
+              text: "CADASTRE-SE",
+              color: Color.fromARGB(249, 243, 115, 11),
+              textColor: kPrimaryLightColor,
               press: () {
                 Navigator.push(
                   context,
