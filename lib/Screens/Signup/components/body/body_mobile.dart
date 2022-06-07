@@ -24,10 +24,10 @@ class BodyMobile extends StatelessWidget {
               "Cadastre-se",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 27),
             ),
-            SizedBox(height: size.height * 0.001),
+            SizedBox(height: size.height / 100),
             SvgPicture.asset(
               "assets/icons/sing-in.svg",
-              height: size.height / 3,
+              height: size.height / 5,
             ),
             RoundedInputField(
               hintText: "Nome Completo",
@@ -44,7 +44,7 @@ class BodyMobile extends StatelessWidget {
               text: "Cadastrar",
               press: () {},
             ),
-            SizedBox(height: size.height * 0.03),
+            SizedBox(height: size.height / 200),
             AlreadyHaveAnAccountCheck(
               login: false,
               press: () {
