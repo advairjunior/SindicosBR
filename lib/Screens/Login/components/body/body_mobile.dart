@@ -21,24 +21,27 @@ class BodyMobile extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              "LOGIN",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              "FAÇA SEU LOGIN",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 25,
+                  color: Colors.white),
             ),
             SizedBox(height: size.height * 0.03),
             SvgPicture.asset(
-              "assets/icons/login.svg",
+              "assets/icons/loginIMG.svg",
               height: size.height * 0.35,
             ),
             SizedBox(height: size.height * 0.03),
             RoundedInputField(
-              hintText: "Your Email",
+              hintText: "E-mail",
               onChanged: (value) {},
             ),
             RoundedPasswordField(
               onChanged: (value) {},
             ),
             RoundedButton(
-              text: "LOGIN",
+              text: "ENTRAR",
               press: () {},
             ),
             SizedBox(height: size.height * 0.03),

@@ -17,7 +17,7 @@ class Background extends StatelessWidget {
         alignment: Alignment.center,
         children: <Widget>[
           Positioned(
-            top: -200,
+            top: -980,
             child: Image.asset(
               "assets/images/contorno_cima.png",
             ),
